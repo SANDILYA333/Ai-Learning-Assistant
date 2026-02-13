@@ -16,8 +16,7 @@ import aiRoutes from './routes/aiRoutes.js';
 import quizRoutes from './routes/quizRoutes.js';
 import progressRoutes from './routes/progressRoutes.js';
 
-//Course Addition
-import courseRoutes from './routes/courseRoutes.js';
+
 
 // ES6 module __dirname alternative
 const __filename = fileURLToPath(import.meta.url);
@@ -56,7 +55,7 @@ app.use('/api/ai', aiRoutes);
 app.use('/api/quizzes', quizRoutes);
 app.use('/api/progress', progressRoutes);
 
-app.use("/api/courses", courseRoutes);
+
 
 app.use(errorHandler);
 
