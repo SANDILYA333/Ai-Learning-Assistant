@@ -21,8 +21,7 @@ const QuizManager = ({ documentId }) => {
   const [selectedQuiz, setSelectedQuiz] = useState(null);
   const [deleting, setDeleting] = useState(false);
 
-  /* ================= FETCH ================= */
-
+  /* FETCH */
   const fetchQuizzes = async () => {
     setLoading(true);
     try {
@@ -41,7 +40,7 @@ const QuizManager = ({ documentId }) => {
     }
   }, [documentId]);
 
-  /* ================= GENERATE ================= */
+  /*  GENERATE  */
 
   const handleGenerateQuiz = async (e) => {
     e.preventDefault();
@@ -61,7 +60,7 @@ const QuizManager = ({ documentId }) => {
     }
   };
 
-  /* ================= DELETE ================= */
+  /*  DELETE */
 
   const handleDeleteRequest = (quiz) => {
     setSelectedQuiz(quiz);
