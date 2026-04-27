@@ -32,7 +32,7 @@ Ship a world-class, premium animated landing page that converts visitors to sign
 
 ---
 
-### Phase 2 — Scroll Narrative & GSAP Animations
+### Phase 2 — Scroll Narrative & GSAP Animations [x]
 **Goal:** Wire GSAP ScrollTrigger to create the 5-section pinned scroll experience. Brain moves left→right. Each section has its headline, content, and section-specific visual (particle flow, flashcard preview, chat mockup). Text stagger reveals on scroll.
 
 **Requirements:** LAND-08, LAND-09, LAND-10, LAND-11, LAND-12, LAND-13, LAND-16, LAND-20
