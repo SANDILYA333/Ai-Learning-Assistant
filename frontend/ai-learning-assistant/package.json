@@ -21,7 +21,11 @@
     "react-router-dom": "^7.13.0",
     "react-syntax-highlighter": "^16.1.0",
     "remark-gfm": "^4.0.1",
-    "tailwindcss": "^4.1.18"
+    "tailwindcss": "^4.1.18",
+    "three": "^0.176.0",
+    "@react-three/fiber": "^8.17.14",
+    "@react-three/drei": "^9.121.3",
+    "gsap": "^3.12.5"
   },
   "devDependencies": {
     "@eslint/js": "^9.39.1",
