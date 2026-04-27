@@ -2,6 +2,8 @@ import React, { Suspense, lazy, useRef } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { useGSAP } from '@gsap/react';
+import LandingNavbar from './LandingNavbar';
+import CustomCursor from './CustomCursor';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -14,33 +16,38 @@ export default function LandingPage() {
   const sectionsRef = useRef([]);
 
   useGSAP(() => {
-    // Animate brain position based on scroll progress through the sections
-    const tl = gsap.timeline({
-      scrollTrigger: {
-        trigger: containerRef.current,
-        start: "top top",
-        end: "bottom bottom",
-        scrub: 1, // Smooth scrubbing
-      }
+    let mm = gsap.matchMedia();
+
+    // Desktop & Tablet (Brain moves left and right)
+    mm.add("(min-width: 768px)", () => {
+      const tl = gsap.timeline({
+        scrollTrigger: {
+          trigger: containerRef.current,
+          start: "top top",
+          end: "bottom bottom",
+          scrub: 1,
+        }
+      });
+      tl.to(brainWrapperRef.current, { xPercent: -35, duration: 1 }, 0);
+      tl.to(brainWrapperRef.current, { xPercent: 0, duration: 1 }, 1);
+      tl.to(brainWrapperRef.current, { xPercent: 35, duration: 1 }, 2);
+      tl.to(brainWrapperRef.current, { xPercent: 45, scale: 1.1, duration: 1 }, 3);
     });
 
-    // We have 5 sections total.
-    // The timeline progresses from 0 to 1 over the total scroll height.
-    
-    // Section 1 (Hero): Center (default)
-    // Section 2 (Upload): Move left
-    tl.to(brainWrapperRef.current, { xPercent: -35, duration: 1 }, 0); // 0 to 1st transition
-    
-    // Section 3 (Quizzes): Move center
-    tl.to(brainWrapperRef.current, { xPercent: 0, duration: 1 }, 1);
-    
-    // Section 4 (Chat): Move right
-    tl.to(brainWrapperRef.current, { xPercent: 35, duration: 1 }, 2);
-    
-    // Section 5 (Reminders/CTA): Move far right and scale slightly
-    tl.to(brainWrapperRef.current, { xPercent: 45, scale: 1.1, duration: 1 }, 3);
+    // Mobile (Brain stays centered but fades so text is readable)
+    mm.add("(max-width: 767px)", () => {
+      const tl = gsap.timeline({
+        scrollTrigger: {
+          trigger: containerRef.current,
+          start: "top top",
+          end: "bottom bottom",
+          scrub: 1,
+        }
+      });
+      tl.to(brainWrapperRef.current, { opacity: 0.3, duration: 1 }, 0);
+    });
 
-    // Stagger text reveals for each section
+    // Stagger text reveals for each section (applies to all screens)
     sectionsRef.current.forEach((section, index) => {
       if (index === 0) return; // Hero animates differently if needed, or already visible
 
@@ -103,6 +110,10 @@ export default function LandingPage() {
         position: 'relative'
       }}
     >
+      {/* ── Premium Polish Components ─────────────────── */}
+      <CustomCursor />
+      <LandingNavbar />
+
       {/* ── Fixed Brain Canvas ──────────────────────── */}
       <div
         style={{
