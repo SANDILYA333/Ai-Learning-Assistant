@@ -25,7 +25,8 @@
     "three": "^0.176.0",
     "@react-three/fiber": "^8.17.14",
     "@react-three/drei": "^9.121.3",
-    "gsap": "^3.12.5"
+    "gsap": "^3.12.5",
+    "@gsap/react": "^2.1.1"
   },
   "devDependencies": {
     "@eslint/js": "^9.39.1",
