@@ -2,35 +2,29 @@
 
 ## Current State
 
-- **Active milestone:** Landing Page v1
-- **Current phase:** Complete
+- **Active milestone:** None
+- **Current focus:** Planning next milestone
 - **Mode:** YOLO
-- **Granularity:** Coarse (3 phases)
+- **Granularity:** Coarse
+
+## Project Reference
+
+See: .planning/PROJECT.md (updated 2026-04-27)
+
+**Core value:** A breathtaking, scroll-driven experience where a live 3D crystalline brain is the narrative centerpiece — moving across the screen as the user scrolls through 5 sections — that converts visitors into signups.
 
 ## Session Log
 
-### 2026-04-27 — Project Initialized
-- Initialized project from brownfield (existing codebase already mapped in `.planning/codebase/`)
-- PROJECT.md, config.json, REQUIREMENTS.md, ROADMAP.md created
-- 23 requirements defined across 3 coarse phases
-
-### 2026-04-27 — Phase 1 Executed
-- Scaffolded `LandingPage.jsx`, `Brain3D.jsx`, and `ParticleField.jsx`
-- Wired `/` route in `App.jsx`
-- Implemented `Brain3D.jsx` using `IcosahedronGeometry` (detail 2)
-
-### 2026-04-27 — Phase 2 Executed
-- Implemented GSAP `ScrollTrigger` in `LandingPage.jsx` using `@gsap/react`
-- Built 5-section scrolling narrative
-- Translated the fixed Brain `<Canvas>` left and right across sections based on scroll progress
-
-### 2026-04-27 — Phase 3 Executed
-- Added `LandingNavbar.jsx` with glassmorphism and GSAP scroll-aware visibility
-- Added `CustomCursor.jsx` with GSAP `quickTo` for high-performance glowing cursor tracking
-- Applied responsive `gsap.matchMedia` adjustments to prevent brain overlap on mobile
+### 2026-04-27 — Milestone v1.0 Complete
+- Executed Phases 1-3 sequentially
+- Built 3D brain component in React Three Fiber
+- Built GSAP scroll narrative
+- Built premium UI components (navbar, cursor)
+- Archived requirements, phases, and roadmap to `.planning/milestones/v1.0*`
+- Updated `MILESTONES.md` and tagged `v1.0` in git
 
 ## Resume Point
 
-`.planning/ROADMAP.md` — All phases are complete. Milestone `Landing Page v1` is finished.
+Milestone `Landing Page v1.0` is complete.
 
-**Next action:** `/gsd-complete-milestone`
+**Next action:** `/gsd-new-milestone`
