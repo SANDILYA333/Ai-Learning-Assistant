@@ -48,25 +48,27 @@ The landing page is purely frontend work. Backend, API routes, models, controlle
 - ✓ Progress dashboard — existing
 - ✓ Learning path engine (built, not yet routed) — existing
 
-### Active (this milestone — landing page)
+### Validated (v1.0 Landing Page)
+- ✓ **LAND-01**: Landing page renders at `/` with full hero section and 3D brain — v1.0
+- ✓ **LAND-02**: Abstract crystalline/geometric 3D brain with golden neuron pulse animations and idle rotation — v1.0
+- ✓ **LAND-03**: Floating particle field background (Three.js points system) — v1.0
+- ✓ **LAND-04**: GSAP ScrollTrigger drives brain position left→right across 5 pinned scroll sections — v1.0
+- ✓ **LAND-05**: Hero section — headline, subtext, two CTAs (gold filled + ghost) — v1.0
+- ✓ **LAND-06**: Upload section — brain shifts left, document-to-brain particle flow animation — v1.0
+- ✓ **LAND-07**: Quizzes & Flashcards section — floating glassmorphism flashcard preview animates in — v1.0
+- ✓ **LAND-08**: AI Chat section — brain shifts right, subtle chat UI mockup fades in — v1.0
+- ✓ **LAND-09**: Reminders + Final CTA section — brain fully right, peak glow, gold pulse button — v1.0
+- ✓ **LAND-10**: Frosted glass navbar (logo left, Login + Get Started right) that appears on scroll — v1.0
+- ✓ **LAND-11**: Custom animated cursor (glowing gold dot) — v1.0
+- ✓ **LAND-12**: Staggered word/line text reveal animations on scroll (GSAP) — v1.0
+- ✓ **LAND-13**: Glassmorphism feature cards with gold borders and soft inner glow — v1.0
+- ✓ **LAND-14**: Color system: `#050510` background, `#1a0533` gradient, `#FFB347`/`#FF8C00` gold, `#4FC3F7` blue — v1.0
+- ✓ **LAND-15**: Typography: Inter or Syne — large, bold, confident headlines — v1.0
+- ✓ **LAND-16**: Desktop-first responsive layout, mobile-graceful — v1.0
+- ✓ **LAND-17**: Performance: lazy-loaded Three.js canvas, no scroll jank — v1.0
 
-- [ ] **LAND-01**: Landing page renders at `/` with full hero section and 3D brain
-- [ ] **LAND-02**: Abstract crystalline/geometric 3D brain with golden neuron pulse animations and idle rotation
-- [ ] **LAND-03**: Floating particle field background (Three.js points system)
-- [ ] **LAND-04**: GSAP ScrollTrigger drives brain position left→right across 5 pinned scroll sections
-- [ ] **LAND-05**: Hero section — headline, subtext, two CTAs (gold filled + ghost)
-- [ ] **LAND-06**: Upload section — brain shifts left, document-to-brain particle flow animation
-- [ ] **LAND-07**: Quizzes & Flashcards section — floating glassmorphism flashcard preview animates in
-- [ ] **LAND-08**: AI Chat section — brain shifts right, subtle chat UI mockup fades in
-- [ ] **LAND-09**: Reminders + Final CTA section — brain fully right, peak glow, gold pulse button
-- [ ] **LAND-10**: Frosted glass navbar (logo left, Login + Get Started right) that appears on scroll
-- [ ] **LAND-11**: Custom animated cursor (glowing gold dot)
-- [ ] **LAND-12**: Staggered word/line text reveal animations on scroll (GSAP)
-- [ ] **LAND-13**: Glassmorphism feature cards with gold borders and soft inner glow
-- [ ] **LAND-14**: Color system: `#050510` background, `#1a0533` gradient, `#FFB347`/`#FF8C00` gold, `#4FC3F7` blue
-- [ ] **LAND-15**: Typography: Inter or Syne — large, bold, confident headlines
-- [ ] **LAND-16**: Desktop-first responsive layout, mobile-graceful
-- [ ] **LAND-17**: Performance: lazy-loaded Three.js canvas, no scroll jank
+### Active
+(None pending)
 
 ### Out of Scope
 
@@ -108,4 +110,4 @@ This document evolves at phase transitions and milestone boundaries.
 3. Audit Out of Scope — reasons still valid?
 
 ---
-*Last updated: 2026-04-27 after initialization*
+*Last updated: 2026-04-27 after v1.0 milestone completion*
