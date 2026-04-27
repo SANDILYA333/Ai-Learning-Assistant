@@ -11,7 +11,7 @@ Ship a world-class, premium animated landing page that converts visitors to sign
 
 ## Phases
 
-### Phase 1 — Foundation & 3D Brain
+### Phase 1 — Foundation & 3D Brain [x]
 **Goal:** Install dependencies, wire the `/` route, build the crystalline 3D brain with pulse animations, idle rotation, and particle field. The canvas renders and the brain lives.
 
 **Requirements:** LAND-01, LAND-02, LAND-03, LAND-04, LAND-05, LAND-06, LAND-07
